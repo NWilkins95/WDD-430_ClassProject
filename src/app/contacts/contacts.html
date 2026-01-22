@@ -3,9 +3,9 @@
         <cms-contact-list (contactWasSelected)="selectedContact = $event"></cms-contact-list>
     </div>
     <div class="col-md-4">
-        <cms-contact-detail *ngIf="selectedContact; else noContact" [contact]="selectedContact"></cms-contact-detail>
-        <ng-template #noContact>
-            <p>Please select a contact to see the details.</p>
+        <cms-contact-detail *ngIf="selectedContact; else emptyDetail" [contact]="selectedContact"></cms-contact-detail>
+        <ng-template #emptyDetail>
+            <cms-contact-detail [contact]="emptyContact"></cms-contact-detail>
         </ng-template>
     </div>
 </div>

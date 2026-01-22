@@ -9,5 +9,6 @@ import { Contact } from './contact.model';
 })
 export class Contacts {
   selectedContact: Contact;
-
+  
+  emptyContact: Contact = new Contact('', '', '', '', null);
 }
