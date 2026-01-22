@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './document-list.css',
 })
 export class DocumentList {
-
+  
 }
