@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Document } from '../document.model';
 
 @Component({
@@ -8,5 +8,5 @@ import { Document } from '../document.model';
   styleUrl: './document-item.css',
 })
 export class DocumentItem {
-  document: Document;
+  @Input() document: Document;
 }
